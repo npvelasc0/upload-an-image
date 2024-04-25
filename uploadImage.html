@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LabNostic</title>
+    <link rel="stylesheet" href="uploadImage.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik+One&display=swap"> <!--rubik one-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:wght@400;700&display=swap"> <!--roboto mono-->
+</head>
+<body>
+    <!--logo and name-->
+    <header class="header">
+        <div class="logo">
+            <img src="logo.png">
+        </div>
+        <div class = "name">
+            <h1>LabNostic</h1>
+        </div>
+    </header>
+    <main>
+        <div class="uploadButton">
+            <button type = "imageUp" id = "upload" >
+            <img src = "upload.png" style="filter: invert(100%) sepia(6%) saturate(0%) hue-rotate(319deg) brightness(111%) contrast(101%);"> <!--change color of the icon-->
+                Upload
+            <input type = "file" id="fileInput" accept="image/*">
+            </button>  
+        </div>
+        <span id = "chosenImage">No image chosen, yet</span>
+        <a href="image.html">
+            <button id = "analyze">Analyze</button>
+        </a>
+    </main>
+    <script src = "https://www.gstatic.com/firebasejs/6.0.2/firebase.js"></script>
+    <script src = "uploadImage.js"></script>
+</body>
+</html>
